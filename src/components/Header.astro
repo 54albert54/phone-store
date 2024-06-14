@@ -1,0 +1,85 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<header>
+  <nav class="h-[78px]">
+    <h2>
+      <a href="/">
+        <img
+          class="absolute -top-4 -left-2 size-[120px]"
+          src="/locoPNG.png"
+          alt=""
+        /></a>
+    </h2>
+    <div class="internal-links hidden sm:block">
+      <HeaderLink class={" sm:flex"} href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Ofertas</HeaderLink>
+      <HeaderLink href="/about">Celulares</HeaderLink>
+      <HeaderLink href="/about">Accesorios</HeaderLink>
+      <HeaderLink href="/about">Reparaciones</HeaderLink>
+    </div>
+    <div>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path
+            d="M4 18l16 0"></path>
+        </svg>
+      </div>
+    </div>
+  </nav>
+</header>
+<style>
+  header {
+    margin: 0;
+    padding: 0 1em;
+    background: white;
+    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+  }
+  h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  h2 a,
+  h2 a.active {
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav a {
+    padding: 1em 0.5em;
+    color: var(--black);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none;
+    border-bottom-color: red;
+  }
+  .social-links,
+  .social-links a {
+    display: flex;
+  }
+  .imagen_heather {
+    position: absolute;
+    top: -10px;
+    width: 120px;
+    height: 100px;
+  }
+</style>
