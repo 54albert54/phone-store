@@ -1,16 +1,41 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BotonMain from '../components/BotonMain.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
+<section class="relative min-h-[600px]">
+	<div class="hero-image w-full flex justify-center ">
+		{heroImage && <img class="rounded-3xl mb-4" width={1020} height={510} src={heroImage} alt="" />}
+	</div>
+	<div class="flex flex-col gap-4  justify-between">
+		<h1 class="text-xl font-bold text-center" >{title}</h1>
+		<p>{description}</p>
+	</div>
+	
+	<div class="flex justify-end mt-6">
+		
+	
+	<FormattedDate date={pubDate} />
+		{
+			updatedDate && (
+				<div class="last-updated-on">
+					Last updated on <FormattedDate date={updatedDate} />
+				</div>
+			)
+		}
+		</div>
+	
+		<div class="w-200 flex justify-center  ">
+			<BotonMain title="atras" path='/servicios' />
+		</div>
 
-<html lang="en">
+</section>
+
+<!-- <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
@@ -82,4 +107,4 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		</main>
 	
 	</body>
-</html>
+</html> -->

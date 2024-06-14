@@ -1,17 +1,16 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+
 import GlobalLayouts from '../layouts/GlobalLayouts.astro';
 ---
 <GlobalLayouts title="Phone Store">
 
-<Layout
-	title="Sobre Nosotros"
-	description="Sobre Nosotros"
-	pubDate={new Date('August 08 2021')}
-	heroImage="https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/424643878_18323188354136551_3756717131162706353_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WfFtJHNuxxQQ7kNvgFS6AWo&_nc_ht=scontent-bos5-1.xx&oh=00_AYB2pExY03VN0-A6OHeqMxhZt0xrOfXpsUHBFl6m4_ewlA&oe=66717B2A"
->
-<div class="container mx-auto px-4 py-8">
-	
+<div class="container mx-auto h-sccreen px-4 py-8">
+	<h1 class="text-3xl text-center font-bold mb-6">Sobre Nosotros</h1>
+	<div>
+		<img class="w-full h-80 object-cover  rounded-xl mb-20" src="https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/424643878_18323188354136551_3756717131162706353_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WfFtJHNuxxQQ7kNvgFS6AWo&_nc_ht=scontent-bos5-1.xx&oh=00_AYB2pExY03VN0-A6OHeqMxhZt0xrOfXpsUHBFl6m4_ewlA&oe=66717B2A"
+ alt="">
+	</div>
+	<div class="w-[80%] mx-auto ">
 	<p class="text-lg mb-6">
 		En nuestra tienda de celulares, nos apasiona proporcionar a nuestros clientes los mejores productos y servicios. Con años de experiencia en la industria, hemos establecido una reputación de confianza y excelencia.
 	</p>
@@ -24,11 +23,11 @@ import GlobalLayouts from '../layouts/GlobalLayouts.astro';
 	<p class="text-lg mb-6">
 		En nuestra tienda, nos esforzamos por brindar un servicio al cliente excepcional. Siempre estamos aquí para responder tus preguntas y resolver cualquier problema que puedas tener. ¡Esperamos poder ayudarte con todas tus necesidades de telefonía móvil!
 	</p>
-	<p class="text-sm font-light  mb-6">
+	<p class="text-sm font-light  mb-6 text-center">
 		proximo al parquesito del reparto yuna BONAO, Monseñor Nouel, Monsenor Nouel. <br> Dominican Republic 42000
 	</p>
 </div>
+</div>
 
 
-</Layout>
 </GlobalLayouts>

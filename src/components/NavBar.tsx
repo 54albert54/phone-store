@@ -3,27 +3,28 @@ import { useState } from "react";
 const allMenus = [
   {
     id: 1,
-    title: "celulares",
-    path: "/about",
+    title: "x ofertas ",
+    path: "/ofertas",
   },
   {
     id: 2,
-    title: "ofertas",
-    path: "/blog",
+    title: "x celulares",
+    path: "/celulares",
   },
+  
   {
     id: 3,
-    title: "accesorios",
-    path: "/blog",
+    title: "x accesorios ",
+    path: "/accesorios",
   },
   {
     id: 4,
-    title: "reparaciones",
-    path: "/blog",
+    title: "ok Servicios ",
+    path: "/servicios",
   },
   {
     id: 5,
-    title: "conocenos",
+    title: "ok conocenos ",
     path: "/about",
   },
 ];
@@ -33,16 +34,18 @@ const NavBar = () => {
  
 
   return (
-    <header className="bg-white shadow-md sticky sm:block top-0 z-10">
-      <nav className="flex items-center justify-between h-16 px-4">
-        <a href="/">
+    <header className="bg-white shadow-md sticky sm:block top-0 z-10 mb-10 ">
+      <nav className="flex items-center justify-between h-16 px-4 max-w-[1080px] mx-auto">
+        <div className="flex items-center  w-full h-6"> 
+        <a href="/" className="flex items-center ">
           <img
             
-            className="absolute top-[-5px] left-[-2px] w-28 h-20"
+            className=" top-[-5px] left-[-2px] w-28 h-20"
             src="/locoPNG.png"
             alt=""
           />
         </a>
+        </div>
 
         <div className="hidden sm:flex  gap-x-4">
           {allMenus.map((menu) => {
@@ -70,10 +73,10 @@ const NavBar = () => {
       </nav>
       {/* Mobile menu */}
       {showMenu && (
-        <section className="fixed top-16 left-0  z-10 bg-red-200 w-screen h-screen flex flex-col gap-y-4 items-center pt-10">
+        <section className="fixed top-16 left-0 sm:hidden  z-10 bg-slate-200 w-screen h-screen flex flex-col gap-y-4 items-center pt-10">
           {allMenus.map((menu) => {
             return (
-              <div key={menu.id} className="text-4xl w-3/4 h-16 flex  items-center pl-3 rounded-md bg-red-300 font-normal shadow-red-400 shadow-sm ">
+              <div key={menu.id} className="text-4xl w-3/4 h-16 flex  items-center pl-3 rounded-md bg-slate-400/80 font-normal shadow-slate-400 shadow-sm ">
               <NavBarLinks
                 
                 href={menu.path}

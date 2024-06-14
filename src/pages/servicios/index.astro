@@ -6,8 +6,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import GlobalLayouts from '../../layouts/GlobalLayouts.astro';
+import  {dummyData} from './dummyData'
 
-const posts = (await getCollection('blog')).sort(
+const posts = dummyData.sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 
@@ -97,7 +98,7 @@ const posts = (await getCollection('blog')).sort(
 						{
 							posts.map((post) => (
 								<li>
-									<a href={`/blog/${post.slug}/`}>
+									<a href={`/servicios/${post.slug}/`}>
 										<img width={720} height={360} src={post.data.heroImage} alt="" />
 										<h4 class="title">{post.data.title}</h4>
 										<p class="date">

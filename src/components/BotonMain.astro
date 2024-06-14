@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+  path: string;
+  primary?: boolean;
+
+}
+
+const { title, primary , path } = Astro.props;
+---
+
+
+<div>
+  {
+    (
+      <a
+        href={path}
+        class={
+          primary
+            ? "block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+            : "block w-full rounded bg-slate-300 px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+        }
+      >
+        {title}
+      </a>
+    )
+  }
+</div>
+
+<!-- 
+
+
+          <a
+            href="#"
+            class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+          >
+            Get in Touch
+          </a>
+
+
+
+-->
