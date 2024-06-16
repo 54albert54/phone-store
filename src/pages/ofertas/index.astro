@@ -1,27 +1,25 @@
 ---
 
+import FormattedDate from '../../components/FormattedDate.astro';
 import GlobalLayouts from '../../layouts/GlobalLayouts.astro';
-import  { dummyData } from './dummyData'
+import  { dataOffer } from '../../components/data/offferData'
 import ShowAllBanner from '../../components/ShowAllBanner.astro';
 
-const posts = dummyData.sort(
+const posts = dataOffer.sort(
 	(a, b) => a.pubDate.valueOf() - b.pubDate.valueOf()
 );
-
 
 
 
 ---
 
 
-	
-		
-		
 
-	
+
 		<GlobalLayouts title="Phone Store">
-			
-			<ShowAllBanner posts={posts} path="servicios" />
+	  <ShowAllBanner posts={posts} path="ofertas" />
+
 		</GlobalLayouts>
-	
+		
+		
 

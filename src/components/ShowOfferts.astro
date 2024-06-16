@@ -1,5 +1,13 @@
 ---
 
+ const dataOffer = {
+  title: "Oferta de Temporada: Gran Variedad de Covers",
+  description:
+    "Aproveche nuestra oferta de temporada con una gran variedad de covers para su dispositivo. Desde diseños elegantes hasta opciones robustas para máxima protección, tenemos el cover perfecto para cada estilo y necesidad. No pierda esta oportunidad de darle un nuevo look a su dispositivo a precios increíbles. ¡Visítenos y descubra todas nuestras opciones!",
+  img: "/dummyPhoto/offer.png",
+  path: "/ofertas/cover",
+};
+
 ---
 
 
@@ -8,11 +16,11 @@
   <div class="p-8 md:p-12 lg:px-16 lg:py-24">
     <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
       <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
-        Ofertas
+        {dataOffer.title}
       </h2>
 
       <p class="hidden text-gray-500 md:mt-4 md:block">
-        información de muestras y promociones de productos tomadas de los ultimos stados de whatsapp
+        {dataOffer.description}
       </p>
 
       <div class="mt-4 md:mt-8">
@@ -28,7 +36,7 @@
 
   <img
     alt=""
-    src="public/dummServices/offerts.png"
+    src={dataOffer.img}
     class="h-fuldl w-full object-cover sm:h-[calc(100%_-_4rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
   />
 </section>

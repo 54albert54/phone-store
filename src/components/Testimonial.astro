@@ -1,5 +1,11 @@
 ---
 
+const dataTestimonial = {
+  title: 'Gracias por Preferir Nuestra Tienda',
+  description: 'Valoramos profundamente su elección de preferirnos. Hacemos nuestro mejor esfuerzo para brindar un servicio de calidad día tras día. Su satisfacción es nuestra prioridad, y nos comprometemos a seguir mejorando para ofrecerle la mejor experiencia posible.',
+  img: '/dummyPhoto/testimonial.png',
+}
+
 ---
 
 <section>
@@ -9,7 +15,7 @@
         <div class="relative h-80 sm:h-80 lg:h-[480px]">
           <img
             alt=""
-            src="public/dummServices/footerServices.png"
+            src={dataTestimonial.img}
             class="absolute inset-0 h-full w-full object-cover"
           />
         </div>
@@ -22,13 +28,11 @@
 
         <div class="p-8 sm:p-16 lg:p-24">
           <h2 class="text-2xl font-bold sm:text-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, debitis.
+            {dataTestimonial.title}
           </h2>
 
           <p class="mt-4 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, molestiae! Quidem est
-            esse numquam odio deleniti, beatae, magni dolores provident quaerat totam eos, aperiam
-            architecto eius quis quibusdam fugiat dicta.
+            {dataTestimonial.description}
           </p>
 
         </div>
