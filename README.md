@@ -1,69 +1,44 @@
-# Astro Starter Kit: Blog
+# Tienda de Celulares - Landing Page
 
-```sh
-npm create astro@latest -- --template blog
-```
+![Tienda de Celulares](https://example.com/image.png) <!-- Puedes reemplazar este enlace con una imagen relevante -->
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## Descripción del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este proyecto es una landing page funcional para una tienda de celulares, creada utilizando Astro y React. La página ofrece una gran variedad de dispositivos móviles y presenta ofertas maravillosas de temporada. Además, cuenta con un departamento técnico compuesto por los más avanzados técnicos, capaces de realizar las prácticas más demandantes.
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+## Tecnologías Utilizadas
 
-Features:
+- **Astro**: Framework moderno para la generación de sitios web rápidos y optimizados.
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario interactivas.
+- **CSS**: Para el diseño y estilo de la página.
+- **JavaScript**: Para la funcionalidad del lado del cliente.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+## Funcionalidades Principales
 
-## 🚀 Project Structure
+- **Catálogo de Productos**: Presentación de una amplia gama de dispositivos móviles.
+- **Ofertas de Temporada**: Sección destacada con las mejores ofertas actuales.
+- **Departamento Técnico**: Información sobre el servicio técnico avanzado disponible.
+- **Diseño Responsivo**: Adaptado para una visualización óptima en dispositivos móviles y de escritorio.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Capturas de Pantalla
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+<!-- Puedes agregar capturas de pantalla del proyecto aquí -->
+![Captura de Pantalla 1](https://example.com/screenshot1.png)
+![Captura de Pantalla 2](https://example.com/screenshot2.png)
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Contribuciones
+Las contribuciones son bienvenidas. Si tienes alguna idea o mejora, por favor abre un issue o envía un pull request.
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+### Autor
+Tu Nombre - Alberto B.
+Licencia
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
 
-Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
-## Credit
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
-# phone-store

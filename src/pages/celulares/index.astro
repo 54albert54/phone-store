@@ -1,9 +1,11 @@
 ---
+import ShowItems from "../../components/ShowItems";
 import GlobalLayouts from "../../layouts/GlobalLayouts.astro";
+import {AllCelulares} from "../../components/data/itemsData"
 
 
 ---
 <GlobalLayouts title="Phone Store">
-  <h1>Celulares</h1>
-
+ 
+  <ShowItems client:load data={AllCelulares} />
 </GlobalLayouts>
