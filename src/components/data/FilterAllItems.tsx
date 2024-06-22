@@ -19,8 +19,7 @@ const FilterComponent = ({ items }: Props) => {
     setMinPrice(e.target.value);
   const handleMaxPriceChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setMaxPrice(e.target.value);
-  const handleOnSaleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setOnSale(e.target.checked);
+ 
 
   const filteredItems = items.filter((item) => {
     const { data } = item;
@@ -130,25 +129,25 @@ const ItemCard = ({ item }:{item: dataShowItems}) => {
   );
 };
 
-const CheckOfferta = ({ onSale, setOnSale }: { onSale: boolean; setOnSale: (e: boolean) => void }) => {
+// const CheckOfferta = ({ onSale, setOnSale }: { onSale: boolean; setOnSale: (e: boolean) => void }) => {
 
-  return (
-    <div 
-    className={`w-24 bg-red-300 h-10 rounded-xl text-center  p-2  select-none cursor-pointer shadow-md font-semibold flex flex-row  gap-5 `}
-    onClick={() => setOnSale(!onSale)}
-    >
-      <p>Oferta</p>
-      {
-        onSale && (
-          <div>
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  stroke-linejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-          </div>
-        )
-      }
+//   return (
+//     <div 
+//     className={`w-24 bg-red-300 h-10 rounded-xl text-center  p-2  select-none cursor-pointer shadow-md font-semibold flex flex-row  gap-5 `}
+//     onClick={() => setOnSale(!onSale)}
+//     >
+//       <p>Oferta</p>
+//       {
+//         onSale && (
+//           <div>
+//             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  stroke-linejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+//           </div>
+//         )
+//       }
      
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
 const CheckPrices = ({ filterInput }:{ filterInput : Array<{label:string, type:string, value:string, onChange: (e: React.ChangeEvent<HTMLInputElement>) => void}>} ) => {
 return(

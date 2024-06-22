@@ -38,7 +38,7 @@ const ShowAllOfferts = () => {
                 ver esta oferta
               </a>
               <div className="flex justify-center items-center gap-3 pt-4">
-              {dataOffer.map((dataOffer, index) => (
+              {dataOffer.map((_, index) => (
                 <div
                   key={index}
                   onClick={() => {

@@ -133,8 +133,8 @@ const MenuIcon = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
+      stroke-Width="2"
+      stroke-Linecap="round"
       strokeLinejoin="round"
       className="icon icon-tabler icons-tabler-menu-2"
     >
